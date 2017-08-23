@@ -1,0 +1,11 @@
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<interceptors>
+		<class>com.axway.dojo.cdi.interceptor.SecurityManager</class>
+	</interceptors>
+	<decorators>
+		<class>com.axway.dojo.cdi.decorator.BarSecuredImpl</class>
+	</decorators>
+	<!-- <alternatives>
+		<class>com.axway.dojo.cdi.alternative.BarMock</class>
+	</alternatives>-->
+</beans>
